@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerHouse Gym | Programs</title>
+  <style>
+    body{
+    animation: Transformation 0.8s;
+}
+@keyframes Transformation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #8d5515;
+    }
+
+    /* Page Banner */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1599058917212-9b6f3b6d6f5f') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    .banner h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    /* Programs Section */
+    .programs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+    .program {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .program h3 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .program p {
+      color: #555;
+    }
+    .program a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #f39c12;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .program a:hover {
+      background: #d35400;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>PowerHouse Gym</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainer.html">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="eipment.html">Equipments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Our Programs</h2>
+  </section>
+
+  <!-- Programs -->
+  <section class="programs">
+    <div class="program">
+      <h3>Strength Training</h3>
+      <p>Build muscle and increase endurance with guided strength workouts.</p>
+      <a href="https://www.nhs.uk/live-well/exercise/strength-exercises/" target="_blank">Learn More</a>
+    </div>
+    <div class="program">
+      <h3>Cardio Blast</h3>
+      <p>High-energy sessions to burn calories and improve heart health.</p>
+      <a href="https://dymatize.co.in/thescoop/the-best-cardio-exercises-for-men-and-women-for-optimal-health" target="_blank">Learn More</a>
+    </div>
+    <div class="program">
+      <h3>Yoga & Flexibility</h3>
+      <p>Relax, stretch, and improve balance with our yoga classes.</p>
+      <a href="https://www.healthline.com/health/exercise-fitness/yoga-for-flexibility#flexibility-benefits" target="_blank">Learn More</a>
+    </div>
+    <div class="program">
+      <h3>HIIT Workouts</h3>
+      <p>Short, intense bursts of exercise for maximum fat burn.</p>
+      <a href="https://hydrow.com/blog/hiit-workout-plan-beginner-intermediate-and-advanced-exercises-to-try/" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PowerHouse Gym | Stay Fit, Stay Strong</p>
+  </footer>
+
+</body>
+</html>

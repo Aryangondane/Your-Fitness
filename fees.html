@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Membership Plans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body{
+    animation: Transformation 0.8s;
+}
+@keyframes Transformation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    body {
+      background-color: #f4f4f4;
+      padding: 40px 10px;
+    }
+
+    .pricing-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .pricing-section h1 {
+      margin-bottom: 10px;
+    }
+
+    .pricing-section p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .plans {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid blue;
+    }
+
+    .plan h2 {
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+
+    .plan .tagline {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    .price span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #777;
+    }
+
+    .billed {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      list-style: none;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .features li {
+      margin-bottom: 8px;
+    }
+
+    .features li::before {
+      content: "✓ ";
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .plan button {
+      padding: 10px 0;
+      border-radius: 4px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin-top: auto;
+    }
+
+    .plan button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Highlight the middle plan slightly */
+    .plan.popular {
+      border: 2px solid #007bff;
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .plan {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="pricing-section">
+    <h1>Gym Membership Plans</h1>
+    <p>Choose the plan that fits your fitness goals and schedule.</p>
+
+    <div class="plans">
+      <!-- Basic Plan -->
+      <div class="plan">
+        <h2>Basic</h2>
+        <p class="tagline">Perfect for beginners</p>
+        <p class="price">₹799<span>/month</span></p>
+        <p class="billed">Access during daytime hours only</p>
+        <ul class="features">
+          <li>Access to gym floor</li>
+          <li>Locker room access</li>
+          <li>Free fitness assessment</li>
+        </ul>
+        <button>Choose Basic</button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="plan popular">
+        <h2>Standard</h2>
+        <p class="tagline">Most popular choice</p>
+        <p class="price">₹1199<span>/month</span></p>
+        <p class="billed">Full-day access with group classes</p>
+        <ul class="features">
+          <li>24/7 gym access</li>
+          <li>All group classes included</li>
+          <li>Locker and shower access</li>
+          <li>Monthly progress tracking</li>
+        </ul>
+        <button>Choose Standard</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan">
+        <h2>Premium</h2>
+        <p class="tagline">For serious athletes</p>
+        <p class="price">₹1799<span>/month</span></p>
+        <p class="billed">Everything in Standard plus extra perks</p>
+        <ul class="features">
+          <li>Personal trainer (2 sessions/month)</li>
+          <li>Sauna & steam room access</li>
+          <li>Diet & nutrition plan</li>
+          <li>Priority support</li>
+        </ul>
+        <button>Choose Premium</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
